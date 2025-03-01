@@ -66,7 +66,7 @@ nav ul li a:hover {
 
 /* Hero Section */
 #hero {
-  background: #336699 url("header.png") no-repeat center center/cover;
+  background: #336699 url("../images/header.png") no-repeat center center/cover;
   color: white;
   padding: 100px 0;
   text-align: center;
