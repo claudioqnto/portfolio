@@ -18,8 +18,10 @@ body {
 }
 
 /* Header */
+
 header {
-  background-color: #336699; /* Azul escuro para o header */
+  background-image: image("header.png");
+  background-color: #336699;
   color: white;
   padding: 15px 0;
 }
@@ -64,10 +66,11 @@ nav ul li a:hover {
 
 /* Hero Section */
 #hero {
-  background: #336699 url("your-image.jpg") no-repeat center center/cover;
+  background: #336699 url("header.png") no-repeat center center/cover;
   color: white;
   padding: 100px 0;
   text-align: center;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3); /* Adiciona a sombra */
 }
 
 #hero h2 {
