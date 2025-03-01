@@ -1,0 +1,259 @@
+/* Resetando padrões */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif; /* Fonte mais séria e legível */
+  background-color: #f5f5f5; /* Cor de fundo mais clara e suave */
+  color: #333; /* Texto mais contrastante */
+}
+
+/* Container geral */
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* Header */
+
+header {
+  background-image: image("header.png");
+  background-color: #336699;
+  color: white;
+  padding: 15px 0;
+}
+
+header h1 {
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #133a61;
+  z-index: 1000;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin-top: 10px;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+nav ul li a:hover {
+  background-color: #133a61; /* Azul claro para hover */
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+/* Hero Section */
+#hero {
+  background: #336699 url("header.png") no-repeat center center/cover;
+  color: white;
+  padding: 100px 0;
+  text-align: center;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3); /* Adiciona a sombra */
+}
+
+#hero h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+#hero p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.btn {
+  background-color: #133a61;
+  color: white;
+  padding: 15px 30px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+}
+
+.btn:hover {
+  background-color: #303f9f; /* Um tom mais escuro para hover */
+  transition: background-color 0.3s ease;
+}
+
+/* Seção sobre mim */
+.sobre {
+  text-align: center;
+  padding: 60px 0;
+}
+
+.sobre .foto-perfil {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+/* Seção de Habilidades */
+.habilidades {
+  padding: 60px 0;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.habilidades ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.habilidades ul li {
+  margin: 0 15px;
+  font-size: 1.2rem;
+  color: #757575; /* Cor cinza para os itens de lista */
+}
+
+/* Seção de Projetos */
+.projetos {
+  padding: 60px 0;
+  text-align: center;
+  background-color: #f5f5f5;
+}
+
+.projeto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.projeto img {
+  width: 100%;
+  max-width: 320px;
+  margin-bottom: 20px;
+  border-radius: 8px; /* Cantos arredondados para as imagens */
+}
+
+.projeto a {
+  font-size: 1.5rem;
+  color: #133a61; /* Azul escuro para links */
+}
+
+.projeto a:hover {
+  color: #336699; /* Azul claro para hover */
+}
+
+/* Seção de Contato */
+.contato {
+  padding: 60px 0;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.contato h2 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+}
+
+/* Formulário */
+.form-contato {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.form-contato .form-group {
+  width: 100%;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.form-contato label {
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.form-contato input,
+.form-contato textarea {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+.form-contato textarea {
+  resize: vertical;
+  height: 150px;
+}
+
+/* Botão de envio */
+.form-contato button {
+  background-color: #133a61;
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.form-contato button:hover {
+  background-color: #303f9f;
+  transition: background-color 0.3s ease;
+}
+
+/* Rodapé */
+footer {
+  background-color: #133a61;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #3d5afe;
+}
+
+/* Estilo do botão de WhatsApp */
+.btn-whatsapp {
+  display: inline-block;
+  background-color: #218f49; /* Cor do WhatsApp */
+  color: white;
+  padding: 12px 25px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-whatsapp:hover {
+  background-color: #128c7e; /* Cor de hover do WhatsApp */
+}
